@@ -1,1 +1,2 @@
-# 一个乐于分享编程知识的网站
+# Algorithms + Data Structures = Programs
+--------- Niklaus Wirth
