@@ -28,8 +28,7 @@ def find(self, p: int) -> int:
 	return p
 ```
 ### 复杂度分析
-时间复杂度：$O()$
-空间复杂度：$O()$
+时间复杂度：$O(h)$ 其中，h 为树的高度
 
 ### 路径压缩
 ```python
@@ -39,8 +38,7 @@ def findWithPathCompress(self, p: int) -> int:
 	return self.parent[p]
 ```
 ### 复杂度分析
-时间复杂度：$O()$
-空间复杂度：$O()$
+时间复杂度：$O(\alpha(n))$
 
 ## 合并操作的实现
 ### 普通合并
@@ -51,8 +49,8 @@ def union(self, p: int, q: int) -> void:
 	self.parent[pRoot] = qRoot
 ```
 ### 复杂度分析
-时间复杂度：$O()$
-空间复杂度：$O(1)$
+时间复杂度：$O(h)$
+
 ### 考虑合并后集合的结构
 目的是为了防止合并后的集合退化为线性结构
 ```python
@@ -67,8 +65,8 @@ def unionWithWeighted(self, p: int, q: int) -> void:
 		self.size[qRoot] += self.size[pRoot]
 ```
 ### 复杂度分析
-时间复杂度：$O()$
-空间复杂度：$O()$
+时间复杂度：$O(\alpha(n))$
+
 ## 完整实现参考
 ```python
 from typing import List
@@ -87,9 +85,8 @@ class  UnionFind:
 			p =  self.parent[p]
 		return p
 
-  
 
-	def union(self, p: int, q: int) -> void:
+	def union(self, p: int, q: int) -> None:
 
 		pRoot: int  =  self.find(p)
 
@@ -105,7 +102,7 @@ class  UnionFind:
 
 		return  self.parent[p]
 
-	def  unionWithWeighted(self, p: int, q: int) -> void:
+	def  unionWithWeighted(self, p: int, q: int) -> None:
 
 		qRoot: int  =  self.findWithPathCompress(q)
 
@@ -124,4 +121,8 @@ class  UnionFind:
 			self.size[pRoot] +=  self.size[qRoot]
 ```
 ## 并查集的应用
+
+1. 连通性问题
+   - [合根植物](records/union-find/合根植物.md)
+   - [除法求值](records/union-find/除法求值.md)
 
