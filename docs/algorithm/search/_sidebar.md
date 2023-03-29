@@ -1,2 +1,2 @@
-* [search](algorithm/search/search.md)
+* [search](#)
 	* [bfs](algorithm/search/bfs.md)
