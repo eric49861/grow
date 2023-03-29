@@ -7,4 +7,4 @@
 * 算法
 	* [搜索](algorithm/search/search.md)
 	* [排序](algorithm/sort/sort.md)
-	* [动态规划](algorithm/dynamic-plan.md)
+	* [动态规划](algorithm/dp/dynamic-plan.md)
