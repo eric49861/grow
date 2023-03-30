@@ -1,2 +1,5 @@
-* [search](#)
-	* [bfs](algorithm/search/bfs.md)
+* [搜索](#)
+	* [广度优先搜索](algorithm/search/bfs.md)
+	* [深度优先搜索](algorithm/search/dfs.md)
+	* [A*](algorithm/search/Astar.md)
+	* [双向搜索](algorithm/search/双向搜素.md)
