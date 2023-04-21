@@ -7,6 +7,7 @@
 	* [图](data-structure/graph.md)
 	* [并查集](data-structure/union-find.md)
 * 算法
+	* [算法基础](algorithm/basic/basic.md)
 	* [搜索](algorithm/search/search.md)
 	* [排序](algorithm/sort/sort.md)
 	* [动态规划](algorithm/dp/dynamic-plan.md)
